@@ -15,5 +15,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Debug files
+        run: |
+          pwd
+          ls -R
+
       - name: Build with Maven
-        run: mvn package -f Bai_10/pom.xml
+        working-directory: Bai_10
+        run: mvn package
