@@ -11,7 +11,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          working-directory: Bai_10
+
 
       - name: Build with Maven
+        working-directory: Bai_10
         run: mvn package
