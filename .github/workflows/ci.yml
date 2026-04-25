@@ -16,5 +16,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        working-directory: Bai_10
-        run: mvn package
+        run: mvn package -f Bai_10/pom.xml
